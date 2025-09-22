@@ -1,3 +1,7 @@
+/* Error message style: make it red */
+#errorMessage.show {
+    color: red;
+}
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +22,7 @@ body {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 20px;
     padding: 40px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 60px rgb(255, 255, 255);
     max-width: 400px;
     width: 100%;
     backdrop-filter: blur(10px);
@@ -168,7 +172,7 @@ input[type="number"]:focus {
 }
 
 .error-message {
-    color: #ff6b6b;
+    color: #ff0000;
     font-size: 0.9rem;
     margin-top: 10px;
     text-align: center;
@@ -196,7 +200,7 @@ input[type="number"]:focus {
 .clear-btn:hover {
     background: #ff5252;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
 }
 
 @media (max-width: 480px) {
