@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Kalkulator Sederhana</h1>
+        
+        <div class="input-group">
+            <label for="num1">Angka Pertama:</label>
+            <input type="number" id="num1" placeholder="Masukkan angka pertama" step="any">
+        </div>
+        
+        <div class="input-group">
+            <label for="num2">Angka Kedua:</label>
+            <input type="number" id="num2" placeholder="Masukkan angka kedua" step="any">
+        </div>
+        
+        <div class="operators">
+            <button class="operator-btn" onclick="calculate('+')" title="Tambah">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+            </button>
+            <button class="operator-btn" onclick="calculate('-')" title="Kurang">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+            </button>
+            <button class="operator-btn" onclick="calculate('*')" title="Kali">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <path d="M6 6l12 12M18 6l-12 12"></path>
+                </svg>
+            </button>
+            <button class="operator-btn" onclick="calculate('÷')" title="Bagi">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                    <circle cx="12" cy="8" r="1"></circle>
+                    <line x1="6" y1="16" x2="18" y2="16"></line>
+                    <circle cx="12" cy="8" r="1"></circle>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="result-container">
+            <div>
+                <div class="result-label">Hasil</div>
+                <div class="result-value" id="result">0</div>
+            </div>
+        </div>
+        
+        <div class="error-message" id="errorMessage"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
